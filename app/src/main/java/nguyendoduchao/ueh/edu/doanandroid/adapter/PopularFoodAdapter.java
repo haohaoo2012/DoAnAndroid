@@ -24,8 +24,6 @@ public class PopularFoodAdapter extends RecyclerView.Adapter<PopularFoodAdapter.
     Context context;
     List<PopularFood> popularFoodList;
 
-
-
     public PopularFoodAdapter(Context context, List<PopularFood> popularFoodList) {
         this.context = context;
         this.popularFoodList = popularFoodList;

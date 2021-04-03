@@ -22,8 +22,6 @@ public class AsiaFoodAdapter extends RecyclerView.Adapter<AsiaFoodAdapter.AsiaFo
     Context context;
     List<AsiaFood> asiaFoodList;
 
-
-
     public AsiaFoodAdapter(Context context, List<AsiaFood> asiaFoodList) {
         this.context = context;
         this.asiaFoodList = asiaFoodList;

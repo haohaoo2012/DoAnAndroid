@@ -21,10 +21,11 @@
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView7"
         app:layout_constraintEnd_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_bx_share_alt_1" />
 
     <ImageView
@@ -35,7 +36,7 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_rectangle_344" />
+        app:srcCompat="@drawable/ic_baseline_shopping_cart_24" />
 
     <ImageView
         android:id="@+id/imageView8"
@@ -45,7 +46,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/popularfood1" />
+        app:srcCompat="@drawable/canhchua" />
+
+
 
     <TextView
         android:id="@+id/textView3"
@@ -132,7 +135,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:fontFamily="@font/regular"
-        android:text="VEGITARIAN FOOD"
+        android:text="FAMILY FOOD"
         android:textColor="#FF6813"
         android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -142,9 +145,9 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/semibold"
-        android:text="Bánh Bột Lọc Huế"
+        android:text="Canh Chua Cá Lóc"
         android:textColor="#091020"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/textView10"
@@ -161,15 +164,14 @@
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="391dp"
+        android:layout_height="81dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:lineSpacingExtra="2dp"
-        android:text="Bánh bột lọc là một loại bánh  có xuất xứ từ Huế, được làm từ bột sắn được lọc tinh bột, sau đó được luộc một phần nhỏ bột, hoặc dùng nước sôi nhồi kỹ và làm bánh. Nhân bánh thường bằng tôm trộn với gia vị, có thể làm nhân bằng thịt heo nạc hay hỗn hợp tôm-thịt. Thường kèm thêm nước chấm."
+        android:text="Canh chua cá lóc là món ăn làm nên thương hiệu cho ẩm thực Nam Bộ. Được nấu với cá lóc cùng với bông điên điển để làm tăng lên vị chua và thơm ngon của canh. Thường rất phổ biến trong các bữa cơm gia đình "
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 

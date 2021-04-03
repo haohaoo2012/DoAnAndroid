@@ -25,27 +25,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // now here we will add some dummy data to out model class
+
 
         List<PopularFood> popularFoodList = new ArrayList<>();
 
-        popularFoodList.add(new PopularFood("Bánh Bột Lọc Huế", "15k", R.drawable.popularfood1));
-        popularFoodList.add(new PopularFood("Đùi Gà Chiên Giòn", "45k", R.drawable.popularfood2));
-        popularFoodList.add(new PopularFood("Cá Chiên Giòn", "30k", R.drawable.popularfood3));
-        popularFoodList.add(new PopularFood("Bánh Bột Lọc Huế", "15k", R.drawable.popularfood1));
-        popularFoodList.add(new PopularFood("Đùi Gà Chiên Giòn", "45k", R.drawable.popularfood2));
-        popularFoodList.add(new PopularFood("Cá Chiên Giòn", "30k", R.drawable.popularfood3));
-
+        popularFoodList.add(new PopularFood("Canh Chúa Cá Lóc", "55k", R.drawable.canhchua));
+        popularFoodList.add(new PopularFood("Cơm Chiên Hải Sản", "45k", R.drawable.com_hs_xao_rau));
+        popularFoodList.add(new PopularFood("Bánh Canh Cua", "30k", R.drawable.banhcanhcua));
+        popularFoodList.add(new PopularFood("Hủ Tiếu Nam Vang", "35k", R.drawable.hutieu));
+        popularFoodList.add(new PopularFood("Mì Quảng Tôm Thịt ", "45k", R.drawable.miquang));
+        popularFoodList.add(new PopularFood("Bò Kho Bánh Mì", "30k", R.drawable.bokho));
+        popularFoodList.add(new PopularFood("Cá Bống Kho Tộ", "30k", R.drawable.cakho));
         setPopularRecycler(popularFoodList);
 
 
         List<AsiaFood> asiaFoodList = new ArrayList<>();
-        asiaFoodList.add(new AsiaFood("Pizza Hải Sản", "120k", R.drawable.asiafood1, "4.5", "Briand Restaurant"));
-        asiaFoodList.add(new AsiaFood("Bánh Kem Dâu", "85k", R.drawable.asiafood2, "4.2", "Friends Restaurant"));
-        asiaFoodList.add(new AsiaFood("Pizza Hải Sản", "$20", R.drawable.images, "4.5", "Briand Restaurant"));
-        asiaFoodList.add(new AsiaFood("Bánh Kem Dâu", "$25", R.drawable.img, "4.2", "Friends Restaurant"));
-        asiaFoodList.add(new AsiaFood("Pizza Hải Sản", "$20", R.drawable.asiafood1, "4.5", "Briand Restaurant"));
-        asiaFoodList.add(new AsiaFood("Bánh Kem Dâu", "$25", R.drawable.asiafood2, "4.2", "Friends Restaurant"));
+        asiaFoodList.add(new AsiaFood("Pizza Hải Sản", "120.000", R.drawable.asiafood1, "4.5", "Nguyen Restaurant"));
+        asiaFoodList.add(new AsiaFood("Heo quay", "85.000", R.drawable.heoquay, "4.2", "Dat Restaurant"));
+        asiaFoodList.add(new AsiaFood("Bún Chả Hà Nội", "30.000", R.drawable.buncha, "4.5", "Hao Restaurant"));
+        asiaFoodList.add(new AsiaFood("Phở Bò", "25.000", R.drawable.pho, "4.8", "Thao Restaurant"));
+        asiaFoodList.add(new AsiaFood("Bánh Xèo", "30.000", R.drawable.bx, "4.5", "Phuong Restaurant"));
+        asiaFoodList.add(new AsiaFood("Cơm Tấm", "35.000", R.drawable.rice, "4.2", "Hao Restaurant"));
 
         setAsiaRecycler(asiaFoodList);
 

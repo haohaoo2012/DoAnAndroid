@@ -40,6 +40,7 @@
         app:layout_constraintVertical_bias="0.611"
         app:srcCompat="@drawable/ic_notification" />
 
+
     <EditText
         android:id="@+id/editText"
         android:layout_width="0dp"
@@ -85,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/semibold"
             android:text="Popular"
             android:textColor="#FFFFFF"
@@ -95,8 +96,8 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/popular_recycler"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="402dp"
+            android:layout_height="195dp"
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -107,7 +108,7 @@
             android:layout_width="161dp"
             android:layout_height="35dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="12dp"
             android:fontFamily="@font/semibold"
             android:text="Recommend"
             android:textColor="#FFFFFF"
@@ -126,8 +127,8 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <androidx.coordinatorlayout.widget.CoordinatorLayout
-            android:layout_width="0dp"
-            android:layout_height="100dp"
+            android:layout_width="412dp"
+            android:layout_height="78dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
@@ -137,19 +138,21 @@
                 android:id="@+id/bottomAppBar2"
                 style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="43dp"
                 android:layout_gravity="bottom"
                 app:menu="@menu/bottom_menu"
                 app:navigationIcon="@drawable/ic_menu_black_24dp" />
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/floatingActionButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="56dp"
+                android:layout_height="58dp"
                 android:clickable="true"
                 app:backgroundTint="#FF6813"
-                app:layout_anchor="@id/bottomAppBar2"
+                app:layout_anchor="@+id/bottomAppBar2"
+                app:layout_anchorGravity="top|center"
                 app:srcCompat="@drawable/ic_location" />
+
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
