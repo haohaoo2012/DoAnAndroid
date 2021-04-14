@@ -8,21 +8,23 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="203dp"
+        android:layout_height="59dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/semibold"
-        android:text="Find\nFood Near You"
+        android:text="Tìm Kiếm Món Ăn Gần Đây"
         android:textColor="#272677"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
+
+    <ImageButton
+        android:id="@+id/btndangnhap"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="41dp"
+        android:layout_height="43dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,15 +33,17 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
+        android:layout_width="31dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="12dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.611"
         app:srcCompat="@drawable/ic_notification" />
-
 
     <EditText
         android:id="@+id/editText"
@@ -88,7 +92,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/semibold"
-            android:text="Popular"
+            android:text="Phổ Biến"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -105,12 +109,12 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="161dp"
-            android:layout_height="35dp"
+            android:layout_width="203dp"
+            android:layout_height="34dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
             android:fontFamily="@font/semibold"
-            android:text="Recommend"
+            android:text="Món ăn đề xuất"
             android:textColor="#FFFFFF"
             android:textSize="24sp"
             app:layout_constraintStart_toStartOf="parent"

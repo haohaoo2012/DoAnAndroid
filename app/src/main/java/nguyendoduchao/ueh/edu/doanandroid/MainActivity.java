@@ -1,16 +1,19 @@
 package nguyendoduchao.ueh.edu.doanandroid;
 
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
-
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import nguyendoduchao.ueh.edu.doanandroid.adapter.AsiaFoodAdapter;
 import nguyendoduchao.ueh.edu.doanandroid.adapter.PopularFoodAdapter;
 import nguyendoduchao.ueh.edu.doanandroid.model.AsiaFood;
 import nguyendoduchao.ueh.edu.doanandroid.model.PopularFood;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,9 +29,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+        ImageButton chuyen = (ImageButton) findViewById(R.id.btndangnhap);
+
+    chuyen.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent intent= new Intent(MainActivity.this,MainActivity1.class);
+        startActivity(intent);
+    }
+});
+
+
 
         List<PopularFood> popularFoodList = new ArrayList<>();
-
         popularFoodList.add(new PopularFood("Canh Chúa Cá Lóc", "55k", R.drawable.canhchua));
         popularFoodList.add(new PopularFood("Cơm Chiên Hải Sản", "45k", R.drawable.com_hs_xao_rau));
         popularFoodList.add(new PopularFood("Bánh Canh Cua", "30k", R.drawable.banhcanhcua));
@@ -61,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
         popularRecycler.setAdapter(popularFoodAdapter);
 
     }
-
     private void setAsiaRecycler(List<AsiaFood> asiaFoodList) {
 
         asiaRecycler = findViewById(R.id.asia_recycler);
@@ -71,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
         asiaRecycler.setAdapter(asiaFoodAdapter);
 
     }
+
 
 
 
