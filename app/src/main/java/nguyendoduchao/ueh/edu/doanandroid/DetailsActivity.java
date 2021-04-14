@@ -7,9 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class DetailsActivity extends AppCompatActivity {
-
+    int Count;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +29,30 @@ public class DetailsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(DetailsActivity.this,MainActivity.class);
                 startActivity(intent);
+            }
+        });
+        //soLUONG
+        ImageButton cong=(ImageButton)findViewById(R.id.imageView11);
+        ImageButton tru=(ImageButton)findViewById(R.id.imageView10);
+        TextView soluong=(TextView)findViewById(R.id.textView13);
+        TextView tien=(TextView)findViewById(R.id.textView14);
+
+        cong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Count++;
+                soluong.setText(Count+"");
+                tien.setText(Count+"1500");
+
+
+            }
+        });
+        tru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Count--;
+                soluong.setText(Count+"");
+                tien.setText(Count+"1500");
             }
         });
     }

@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -22,13 +24,10 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView popularRecycler, asiaRecycler;
     PopularFoodAdapter popularFoodAdapter;
     AsiaFoodAdapter asiaFoodAdapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
         ImageButton chuyen = (ImageButton) findViewById(R.id.btndangnhap);
 
     chuyen.setOnClickListener(new View.OnClickListener() {
@@ -38,8 +37,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 });
-
-
 
         List<PopularFood> popularFoodList = new ArrayList<>();
         popularFoodList.add(new PopularFood("Canh Chúa Cá Lóc", "55k", R.drawable.canhchua));
