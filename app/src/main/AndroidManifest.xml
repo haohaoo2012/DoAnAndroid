@@ -11,6 +11,7 @@
         android:theme="@style/Theme.DoAnAndroid">
         <activity android:name=".DetailsActivity"/>
         <activity android:name=".MainActivity1"/>
+        <activity android:name=".DatmonActivity"/>
         <activity android:name=".SignUpActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>

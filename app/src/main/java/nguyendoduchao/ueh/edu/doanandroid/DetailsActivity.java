@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -20,7 +19,7 @@ public class DetailsActivity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(DetailsActivity.this,MainActivity.class);
+                Intent intent= new Intent(DetailsActivity.this, DatmonActivity.class);
                 startActivity(intent);
             }
         });
@@ -42,7 +41,7 @@ public class DetailsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Count++;
                 soluong.setText(Count+"");
-                tien.setText(Count+"1500");
+                tien.setText(Count*55000+"");
 
 
             }
@@ -52,7 +51,7 @@ public class DetailsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Count--;
                 soluong.setText(Count+"");
-                tien.setText(Count+"1500");
+                tien.setText(Count*55000+"");
             }
         });
     }

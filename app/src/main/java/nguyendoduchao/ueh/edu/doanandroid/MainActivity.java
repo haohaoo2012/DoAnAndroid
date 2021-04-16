@@ -3,12 +3,15 @@ package nguyendoduchao.ueh.edu.doanandroid;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,6 +19,7 @@ import nguyendoduchao.ueh.edu.doanandroid.adapter.AsiaFoodAdapter;
 import nguyendoduchao.ueh.edu.doanandroid.adapter.PopularFoodAdapter;
 import nguyendoduchao.ueh.edu.doanandroid.model.AsiaFood;
 import nguyendoduchao.ueh.edu.doanandroid.model.PopularFood;
+import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,12 +28,13 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView popularRecycler, asiaRecycler;
     PopularFoodAdapter popularFoodAdapter;
     AsiaFoodAdapter asiaFoodAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ImageButton chuyen = (ImageButton) findViewById(R.id.btndangnhap);
-
+        //chuyengiaodien
+    ImageButton chuyen = (ImageButton) findViewById(R.id.btndangnhap);
     chuyen.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
@@ -80,8 +85,4 @@ public class MainActivity extends AppCompatActivity {
         asiaRecycler.setAdapter(asiaFoodAdapter);
 
     }
-
-
-
-
 }
